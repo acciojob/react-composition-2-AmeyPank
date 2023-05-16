@@ -1,13 +1,23 @@
-
-import React from "react";
-import './../styles/App.css';
+import React, { useState } from 'react';
+import Modal from './Modal';
 
 const App = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <div>
-        {/* Do not remove the main div */}
+      <button onClick={() => setShowModal(true)}>Open Modal</button>
+      <Modal show={showModal} onClose={handleCloseModal}>
+        {/* Content for the modal */}
+        <h2>Modal Title</h2>
+        <p>This is the modal content.</p>
+      </Modal>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
