@@ -19,7 +19,9 @@ const Modal = ({ show, onClose, children }) => {
         <button className="modal-close" onClick={onClose}>
           Close
         </button>
-        <p>{children}</p>
+        {children}
+        <h2>Modal Title</h2>
+        <p>This is the modal content.</p>
       </div>
     </div>
   );
