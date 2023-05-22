@@ -13,7 +13,8 @@ const App = () => {
       <button onClick={() => setShowModal(true)}>Open Modal</button>
       <Modal show={showModal} onClose={handleCloseModal}>
         {/* Content for the modal */}
-
+        <h2>Modal Title</h2>
+        <p className='modal-p'>This is the modal content.</p>
       </Modal>
     </div>
   );

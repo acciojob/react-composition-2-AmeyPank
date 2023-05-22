@@ -20,8 +20,6 @@ const Modal = ({ show, onClose, children }) => {
           Close
         </button>
         {children}
-        <h2>Modal Title</h2>
-        <p className='modal-p'>This is the modal content.</p>
       </div>
     </div>
   );
