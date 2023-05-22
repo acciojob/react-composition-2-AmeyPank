@@ -16,7 +16,7 @@ const App = () => {
         {/* Content for the modal */}
         <div className='modal'>
         <h2>Modal Title</h2>
-        <p>This is the modal content.</p>
+        <p>This is the content of the modal.</p>
         </div>
 
       </Modal>
